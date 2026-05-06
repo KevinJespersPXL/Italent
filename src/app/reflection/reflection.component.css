@@ -1,0 +1,63 @@
+.tab-panel {
+  animation: fadeIn 0.25s ease;
+}
+
+.tab-panel h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 8px;
+}
+
+.tab-panel > p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #4b5563;
+  margin: 0 0 18px;
+}
+
+.pxl-intro {
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-top: 24px !important;
+  margin-bottom: 20px !important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.pxl-factors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin: 20px 0 32px;
+}
+
+.pxl-factor-card {
+  background: #f8f9fb;
+  border: 1px solid #e8eaf0;
+  border-radius: 6px;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pxl-factor-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.pxl-factor-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e94560;
+  margin: 0 0 10px;
+}
+
+.pxl-factor-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #4b5563;
+  margin: 0;
+}

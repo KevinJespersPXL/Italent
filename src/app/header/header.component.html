@@ -1,0 +1,10 @@
+<header class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">{{ profile.name }}</h1>
+    <p class="hero-subtitle">{{ profile.subtitle }}</p>
+    <div class="hero-divider"></div>
+    @for (intro of profile.introductions; track $index) {
+      <p class="hero-intro">{{ intro }}</p>
+    }
+  </div>
+</header>

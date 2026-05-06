@@ -1,0 +1,28 @@
+<div class="activity-card">
+  <h3>{{ activity.title }}</h3>
+  <div class="activity-meta">
+    <span class="activity-date">{{ activity.date }}</span>
+    <span class="activity-type">{{ activity.type }}</span>
+  </div>
+  
+  <p class="activity-description">{{ activity.description }}</p>
+  
+  @if (activity.learnings && activity.learnings.length > 0) {
+    <div class="learnings-section">
+      <h4>Wat ik heb geleerd:</h4>
+      <ul>
+        @for (learning of activity.learnings; track $index) {
+          <li>{{ learning }}</li>
+        }
+      </ul>
+    </div>
+  }
+  
+  @if (activity.tags && activity.tags.length > 0) {
+    <div class="tags">
+      @for (tag of activity.tags; track $index) {
+        <span class="tag">{{ tag }}</span>
+      }
+    </div>
+  }
+</div>

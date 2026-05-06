@@ -1,0 +1,93 @@
+.activity-card {
+  background: #ffffff;
+  border: 1px solid #e8eaf0;
+  border-left: 4px solid #e94560;
+  border-radius: 6px;
+  padding: 24px 28px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.2s;
+}
+
+.activity-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.activity-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 12px;
+}
+
+.activity-meta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+
+.activity-date {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.activity-type {
+  color: #e94560;
+  font-weight: 600;
+}
+
+.activity-description {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #4b5563;
+  margin: 0 0 16px;
+}
+
+.learnings-section {
+  margin: 20px 0;
+}
+
+.learnings-section h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 10px;
+}
+
+.learnings-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.learnings-section li {
+  padding-left: 24px;
+  position: relative;
+  margin-bottom: 8px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.learnings-section li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #e94560;
+  font-weight: bold;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.tag {
+  background: #f1f5ff;
+  color: #0f3460;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}

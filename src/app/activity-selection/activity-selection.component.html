@@ -1,0 +1,8 @@
+<section class="tab-panel fade-in">
+  <h2>Selectie van activiteiten</h2>
+  <p>Hieronder bespreek ik een selectie van activiteiten die voor mij het meest betekenisvol waren.</p>
+
+  @for (activity of activities; track activity.id) {
+    <app-activity-card [activity]="activity"></app-activity-card>
+  }
+</section>

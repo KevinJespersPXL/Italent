@@ -1,0 +1,20 @@
+<nav class="tabs-nav">
+  <button 
+    class="tab-btn" 
+    [class.active]="activeTab === 'overzicht'" 
+    (click)="onTabClick('overzicht')">
+    Overzicht activiteiten
+  </button>
+  <button 
+    class="tab-btn" 
+    [class.active]="activeTab === 'selectie'" 
+    (click)="onTabClick('selectie')">
+    Selectie van activiteiten
+  </button>
+  <button 
+    class="tab-btn" 
+    [class.active]="activeTab === 'eindreflectie'" 
+    (click)="onTabClick('eindreflectie')">
+    Eindreflectie
+  </button>
+</nav>

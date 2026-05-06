@@ -1,0 +1,23 @@
+<section class="tab-panel fade-in">
+  <h2>Eindreflectie</h2>
+  <p>{{ reflectionData.introduction }}</p>
+  
+  @for (paragraph of reflectionData.mainText; track $index) {
+    <p>{{ paragraph }}</p>
+  }
+  
+  <p class="pxl-intro">{{ reflectionData.pxlIntro }}</p>
+  
+  <div class="pxl-factors">
+    @for (factor of pxlFactors; track factor.title) {
+      <div class="pxl-factor-card">
+        <h3>{{ factor.title }}</h3>
+        <p>{{ factor.description }}</p>
+      </div>
+    }
+  </div>
+  
+  @for (paragraph of reflectionData.futureVision; track $index) {
+    <p>{{ paragraph }}</p>
+  }
+</section>

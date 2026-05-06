@@ -1,0 +1,25 @@
+<section class="tab-panel fade-in">
+  <h2>Overzicht activiteiten</h2>
+  <p>Hier vind je een overzicht van alle activiteiten die ik heb gevolgd in het kader van iTalent.</p>
+
+  <table class="activity-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Activiteit</th>
+        <th>Datum</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (activity of activities; track activity.id) {
+        <tr>
+          <td>{{ activity.id }}</td>
+          <td>{{ activity.title }}</td>
+          <td>{{ activity.date }}</td>
+          <td>{{ activity.type }}</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</section>
