@@ -1,12 +1,17 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+
+type Tab = 'overzicht' | 'selectie' | 'eindreflectie';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('Italent');
+  protected readonly activeTab = signal<Tab>('overzicht');
+
+  setTab(tab: Tab): void {
+    this.activeTab.set(tab);
+  }
 }
